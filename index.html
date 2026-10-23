@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Public information, privacy policy and terms for the personal Jason InBody Local Sync utility. No health records are hosted here.">
+<title>Personal measurement archiving — Jason InBody Local Sync</title><style>*{box-sizing:border-box}body{margin:0;background:#f5f4f0;color:#202b29;font:17px/1.75 system-ui,sans-serif}header,main,footer{max-width:860px;margin:auto;padding:28px}header{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid #d8ddd7}nav{display:flex;gap:20px;flex-wrap:wrap}a{color:#236b58;text-underline-offset:4px}header>a{font-weight:650;text-decoration:none}h1{font-size:clamp(30px,5vw,46px);line-height:1.15;letter-spacing:-1px;margin:20px 0}h2{font-size:23px;margin-top:32px}p,li{max-width:72ch}small,.muted{color:#64716b}.intro{background:#e6eee7;border-left:4px solid #35745c;padding:16px 20px}footer{border-top:1px solid #d8ddd7;font-size:14px;margin-top:32px}@media(max-width:650px){header{display:block}nav{margin-top:16px}header,main,footer{padding:22px}}</style></head>
+<body><header><a href="index.html">Jason InBody Local Sync</a><nav aria-label="Main"><a href="index.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+<main>
+<p class="muted">PERSONAL UTILITY · PUBLIC INFORMATION ONLY</p>
+<h1>Jason InBody Local Sync</h1>
+<p class="intro" lang="zh-CN">这是个人自用的数据归档工具说明页。工具在用户自己的 Windows 电脑上读取 InBody 测量，并保存到用户自己的私有 Google Drive。本网站不接收、展示或存储测量数据和凭据。</p>
+<h2>What the utility does</h2>
+<p>Jason InBody Local Sync is a personal Windows utility that retrieves the owner's InBody measurement records through the account's data interface and archives them to the owner's private Google Drive. It is an independent personal project, not an official InBody or Google product.</p>
+<p>The local utility preserves raw measurement records and a separate set of confirmed core fields. It detects repeat measurements so that repeated runs do not create another production copy. Windows scheduled tasks may run the utility after sign-in and once each day.</p>
+<h2>Why it requests Google Drive access</h2>
+<p>The utility uses Google's <code>drive.file</code> permission to create archive files and read back files created by, or explicitly selected for, this utility. It does not request access to every file in the Google account. Google describes this permission as allowing viewing, editing, creating and deleting specific files used with the app; normal archive operation preserves existing raw records and stops on content conflicts.</p>
+<h2>Where the information goes</h2>
+<p>InBody account → the owner's Windows computer → selected private Google Drive archive folders. Raw and core-field files remain separate. Authentication credentials are kept in Windows Credential Manager; they are not placed in archive files, public source, or this website.</p>
+<p>This website provides documentation only. It has no login form, upload form, measurement viewer, analytics scripts, or health-data service. It does not generate health reports, diagnoses or treatment recommendations.</p>
+<h2>Read before authorizing</h2>
+<p>Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>. Authorization can be revoked at any time through <a href="https://myaccount.google.com/connections">Google Account connections</a>.</p>
+</main><footer>Jason InBody Local Sync · Personal utility · Public documentation only</footer></body></html>
